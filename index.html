@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Präsens: шесть форм одного глагола — Stellas</title>
 <meta name="description" content="Спряжение немецких глаголов в настоящем времени: три окончания, две сложные формы и живой тренажёр на 15 глаголов.">
+<link rel="icon" href="assets/favicon.png">
 <style>
 :root{
   --cyan:#2FC6E8;--cyan-d:#12A7CC;--cyan-l:#8FE6F7;--cyan-bg:#B6ECF8;
@@ -155,6 +156,45 @@ footer{background:var(--navy);color:#9FB4E0;padding:40px 0;font-size:13px;text-a
 .tape{background:var(--navy);color:var(--lime);overflow:hidden;white-space:nowrap;padding:12px 0;font-weight:800;font-size:14px;letter-spacing:.05em;text-transform:uppercase}
 .tape div{display:inline-block;animation:marq 22s linear infinite}
 @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- медиа: видео, скриншоты, отзывы ---------- */
+.frame{border-radius:24px;overflow:hidden;background:#0B1533;border:7px solid #0B1533;box-shadow:var(--shadow-lg);position:relative}
+.frame video{display:block;width:100%;height:auto}
+.frame .live{position:absolute;top:14px;left:14px;background:rgba(11,21,51,.78);backdrop-filter:blur(6px);color:var(--lime);font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:7px 11px;border-radius:99px;display:flex;align-items:center;gap:6px}
+.frame .live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime);animation:blip 1.6s ease-in-out infinite}
+@keyframes blip{0%,100%{opacity:1}50%{opacity:.25}}
+
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 4px 16px;margin:0 -4px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.rail::-webkit-scrollbar{height:6px}
+.rail::-webkit-scrollbar-track{background:transparent}
+.rail::-webkit-scrollbar-thumb{background:#8FD5E8;border-radius:99px}
+.shot{flex:0 0 86%;scroll-snap-align:center;background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);cursor:zoom-in;transition:transform .25s}
+.shot:active{transform:scale(.985)}
+@media(min-width:820px){.shot{flex-basis:44%}}
+@media(min-width:1100px){.shot{flex-basis:31%}}
+.shot img{display:block;width:100%;height:auto;background:#EDF6FA}
+.shot .cap{padding:15px 17px 17px}
+.shot .cap b{display:block;color:var(--navy);font-size:16px;line-height:1.25}
+.shot .cap span{display:block;color:var(--muted);font-size:13.5px;font-weight:600;margin-top:5px;line-height:1.4}
+
+.rev{flex:0 0 88%;scroll-snap-align:center;background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);cursor:zoom-in;display:flex;flex-direction:column}
+@media(min-width:820px){.rev{flex-basis:46%}}
+@media(min-width:1100px){.rev{flex-basis:32%}}
+.rev .top{padding:13px 16px;display:flex;align-items:center;gap:9px;border-bottom:1px solid #EAF3F7}
+.rev .top b{font-size:14px;color:var(--navy);font-weight:800}
+.rev .tg{width:22px;height:22px;border-radius:50%;background:linear-gradient(180deg,#41BCE7,#1E96C8);flex:0 0 auto;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:800}
+.rev .ph{background:#141C2B;display:grid;place-items:center;min-height:120px}
+.rev .ph img{display:block;width:100%;height:auto}
+.swipe{display:flex;align-items:center;gap:8px;color:var(--muted);font-weight:700;font-size:13px;margin-top:2px}
+.swipe .arw{animation:slide 1.8s ease-in-out infinite}
+@keyframes slide{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+
+#lb{position:fixed;inset:0;background:rgba(6,14,35,.95);z-index:200;display:none;align-items:center;justify-content:center;padding:18px}
+#lb.on{display:flex;animation:pop .25s}
+#lb img{max-width:100%;max-height:86vh;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+#lb .x{position:absolute;top:14px;right:14px;width:46px;height:46px;border-radius:50%;background:#fff;border:0;font-size:24px;font-weight:800;cursor:pointer;color:var(--navy);line-height:1}
+.brandline{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:12px}
+.brandline img{height:34px;width:auto;border-radius:8px}
 </style>
 </head>
 <body>
@@ -562,6 +602,65 @@ footer{background:var(--navy);color:#9FB4E0;padding:40px 0;font-size:13px;text-a
   </div>
 </section>
 
+<!-- VIDEO + SCREENSHOTS -->
+<section style="background:#fff">
+  <div class="wrap">
+    <div class="rv">
+      <span class="step-tag">Не на словах</span>
+      <h2 class="big">Вот как это<br><em>выглядит внутри</em></h2>
+      <p class="sub">Никаких отрисованных мокапов. Это запись экрана реальной платформы — раздел «Глаголы», в котором Präsens стоит первым пунктом.</p>
+    </div>
+
+    <div class="frame rv" style="margin-top:26px">
+      <span class="live">запись экрана платформы</span>
+      <video src="assets/video/platform.mp4" poster="assets/video/platform.jpg" autoplay muted loop playsinline preload="metadata"></video>
+    </div>
+    <p class="rv" style="margin-top:14px;color:var(--muted);font-weight:600;font-size:15px">
+      Раздел грамматики уровня A0–A2: модальные глаголы, отделяемые и неотделяемые приставки, повелительное наклонение, sein и haben, возвратные глаголы. Каждый пункт — отдельный гайд с видео и упражнениями.
+    </p>
+
+    <div class="rv" style="margin-top:40px">
+      <h3 style="font-size:clamp(20px,5.6vw,30px);color:var(--navy)">Восемь экранов платформы</h3>
+      <p class="swipe">листайте вбок <span class="arw">→</span></p>
+    </div>
+
+    <div class="rail rv" style="margin-top:14px">
+      <figure class="shot" data-lb="assets/platform/p2-guides.jpg">
+        <img src="assets/platform/p2-guides.jpg" alt="Список тем грамматики на платформе" loading="lazy">
+        <figcaption class="cap"><b>Все темы грамматики</b><span>Основы, глаголы, падежи — виден весь маршрут, а не только сегодняшний урок.</span></figcaption>
+      </figure>
+      <figure class="shot" data-lb="assets/platform/p3-guide.jpg">
+        <img src="assets/platform/p3-guide.jpg" alt="Раздел с темами внутри гайда" loading="lazy">
+        <figcaption class="cap"><b>Внутри раздела</b><span>Каждая тема — отдельная страница с объяснением, видео и упражнениями с ответами.</span></figcaption>
+      </figure>
+      <figure class="shot" data-lb="assets/platform/p4-words.jpg">
+        <img src="assets/platform/p4-words.jpg" alt="Словарь с озвучкой" loading="lazy">
+        <figcaption class="cap"><b>Словарь с озвучкой</b><span>die Kaltmiete и die Warmmiete с кнопкой HÖREN. Спряжение живёт во рту — значит, его надо слышать.</span></figcaption>
+      </figure>
+      <figure class="shot" data-lb="assets/platform/p5-builder.jpg">
+        <img src="assets/platform/p5-builder.jpg" alt="Конструктор предложений Sentence Builder" loading="lazy">
+        <figcaption class="cap"><b>Конструктор фраз</b><span>Собираете предложение из слов — приложение проверяет форму глагола и порядок слов.</span></figcaption>
+      </figure>
+      <figure class="shot" data-lb="assets/platform/p6-tracker.jpg">
+        <img src="assets/platform/p6-tracker.jpg" alt="Трекер привычек и статистика" loading="lazy">
+        <figcaption class="cap"><b>Трекер привычек</b><span>Чтение, слушание, разговорная практика, письмо — со streak’ами. Видно, что вы двигаетесь.</span></figcaption>
+      </figure>
+      <figure class="shot" data-lb="assets/platform/p1-home.jpg">
+        <img src="assets/platform/p1-home.jpg" alt="Главная страница платформы A0-A2" loading="lazy">
+        <figcaption class="cap"><b>Главная A0–A2</b><span>Навигация, заметки на сегодня и подборка ресурсов: ютуб, мультфильмы, книги, подкасты, приложения.</span></figcaption>
+      </figure>
+      <figure class="shot" data-lb="assets/platform/p8-situations.jpg">
+        <img src="assets/platform/p8-situations.jpg" alt="Лексика по ситуациям" loading="lazy">
+        <figcaption class="cap"><b>Лексика по ситуациям</b><span>У терапевта, в аптеке, звонок в скорую, у кассы, возврат товара. Фразы под конкретный четверг, а не вообще.</span></figcaption>
+      </figure>
+      <figure class="shot" data-lb="assets/platform/p7-work.jpg">
+        <img src="assets/platform/p7-work.jpg" alt="Раздел «Работа, документы, госорганы»" loading="lazy">
+        <figcaption class="cap"><b>Работа, документы, госорганы</b><span>JobCenter, разговор с консультантом, поиск работы, собеседование на базовом уровне.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- PAIN → ANSWER -->
 <section style="background:linear-gradient(180deg,#fff,#EFFAFE)">
   <div class="wrap">
@@ -595,6 +694,56 @@ footer{background:var(--navy);color:#9FB4E0;padding:40px 0;font-size:13px;text-a
         <p style="font-style:italic;color:var(--muted);font-weight:600">«Боюсь, что это очередная трата денег.»</p>
         <p style="font-weight:800;color:var(--navy);margin-top:14px;font-size:17px">20–30 евро. Один раз. Дешевле одного часа с репетитором и меньше, чем интернет за месяц. Доступ остаётся навсегда — даже если вернётесь через год.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section style="background:#EFFAFE">
+  <div class="wrap">
+    <div class="rv">
+      <span class="step-tag">Отзывы</span>
+      <h2 class="big">Скриншоты <em>без правок</em></h2>
+      <p class="sub">Мы не переписываем отзывы в красивые карточки с выдуманными именами. Это скриншоты переписок как есть — с опечатками, смайликами и «я не мастер писать отзывы».</p>
+      <p class="swipe">листайте вбок <span class="arw">→</span></p>
+    </div>
+
+    <div class="rail rv" style="margin-top:18px">
+      <figure class="rev" data-lb="assets/reviews/r7-cert.jpg">
+        <div class="top"><span class="tg">✓</span><b>Сдан DTZ · B1</b></div>
+        <div class="ph"><img src="assets/reviews/r7-cert.jpg" alt="Сертификат Deutsch-Test für Zuwanderer, уровень B1" loading="lazy"></div>
+      </figure>
+      <figure class="rev" data-lb="assets/reviews/r1.jpg">
+        <div class="top"><span class="tg">1</span><b>О структуре и цене</b></div>
+        <div class="ph"><img src="assets/reviews/r1.jpg" alt="Отзыв о платформе Stellas" loading="lazy"></div>
+      </figure>
+      <figure class="rev" data-lb="assets/reviews/r2.jpg">
+        <div class="top"><span class="tg">2</span><b>О разговорной речи</b></div>
+        <div class="ph"><img src="assets/reviews/r2.jpg" alt="Отзыв о платформе Stellas" loading="lazy"></div>
+      </figure>
+      <figure class="rev" data-lb="assets/reviews/r5.jpg">
+        <div class="top"><span class="tg">3</span><b>Об авторе и методике</b></div>
+        <div class="ph"><img src="assets/reviews/r5.jpg" alt="Отзыв о платформе Stellas" loading="lazy"></div>
+      </figure>
+      <figure class="rev" data-lb="assets/reviews/r6.jpg">
+        <div class="top"><span class="tg">4</span><b>Запуталась в источниках</b></div>
+        <div class="ph"><img src="assets/reviews/r6.jpg" alt="Отзыв о платформе Stellas" loading="lazy"></div>
+      </figure>
+      <figure class="rev" data-lb="assets/reviews/r4.jpg">
+        <div class="top"><span class="tg">5</span><b>О разделе с видео</b></div>
+        <div class="ph"><img src="assets/reviews/r4.jpg" alt="Отзыв о платформе Stellas" loading="lazy"></div>
+      </figure>
+      <figure class="rev" data-lb="assets/reviews/r3.jpg">
+        <div class="top"><span class="tg">6</span><b>Купила год назад</b></div>
+        <div class="ph"><img src="assets/reviews/r3.jpg" alt="Отзыв о платформе Stellas" loading="lazy"></div>
+      </figure>
+    </div>
+
+    <div class="card rv" style="margin-top:8px;background:var(--navy);color:#fff">
+      <p style="font-size:clamp(17px,4.8vw,22px);font-weight:800;line-height:1.4">
+        Один из этих скриншотов — сертификат <span style="color:var(--lime)">Deutsch-Test für Zuwanderer</span>. Hören und Lesen — 42 из 45. Sprechen — B1 sehr gut erfüllt.
+      </p>
+      <p style="color:#CFE0FF;margin-top:12px;font-weight:600">Это тот самый экзамен, который «невозможно сдать без учёбы по 8 часов в день».</p>
     </div>
   </div>
 </section>
@@ -720,8 +869,11 @@ footer{background:var(--navy);color:#9FB4E0;padding:40px 0;font-size:13px;text-a
 
 <div class="sticky" id="sticky"><a class="btn lime" href="#cta">Забрать А0 → С1 за 30 € ⚡</a></div>
 
+<div id="lb"><button class="x" aria-label="Закрыть">×</button><img alt=""></div>
+
 <footer>
   <div class="wrap">
+    <div class="brandline"><img src="assets/logo.png" alt="Stellas Deutsch"></div>
     <p style="font-weight:800;color:#fff;font-size:18px">Stellas · немецкий для тех, кто уже здесь</p>
     <p style="margin-top:10px">Урок про Präsens — бесплатный фрагмент платформы. Внутри таких ещё 340.</p>
   </div>
@@ -909,6 +1061,22 @@ function showR(){
 }
 $('qrestart').onclick=()=>{qi=0;qs=0;$('qresult').classList.remove('show');$('quizBody').style.display='block';drawQ()};
 drawQ();
+
+/* ---------- LIGHTBOX ---------- */
+const lb=$('lb'),lbImg=lb.querySelector('img');
+document.querySelectorAll('[data-lb]').forEach(el=>{
+  el.addEventListener('click',()=>{lbImg.src=el.dataset.lb;lb.classList.add('on');document.body.style.overflow='hidden'});
+});
+function closeLb(){lb.classList.remove('on');document.body.style.overflow='';lbImg.src=''}
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('x'))closeLb()});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&lb.classList.contains('on'))closeLb()});
+
+/* видео: не крутим вхолостую, когда его не видно */
+document.querySelectorAll('.frame video').forEach(v=>{
+  new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){const p=v.play();if(p&&p.catch)p.catch(()=>{})}else{v.pause()}
+  }),{threshold:.25}).observe(v);
+});
 
 /* FAQ */
 document.querySelectorAll('.acc').forEach(a=>{
